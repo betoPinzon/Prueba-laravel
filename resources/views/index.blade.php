@@ -1,11 +1,11 @@
 @extends('layouts.template')
 @section('contentIndex')
     <div class="flex flex-col items-center mb-10">
-        <img class="w-2/12" src="{{asset('img/LOGO.svg')}}">
-        <h2 class="font-narrow text-4xl font-medium">Fórmate online como profesional</h2>
-        <h3 class="font-narrow text-lg text">Aprende con los mejores profesionales y forma parte de la mayor comunidad para creativos.</h3>
+        <img class="w-3/12" src="{{asset('img/LOGO.svg')}}">
+        <h2 class="ml-2.5 leading-8 font-narrow text-4xl font-medium">Fórmate online como profesional</h2>
+        <h3 class="ml-2.5 mt-3.5 leading-5 font-narrow text-lg text">Aprende con los mejores profesionales y forma parte de la mayor comunidad para creativos.</h3>
     </div>
-    <div class="grid grid-cols-3 gap-8 mt-5 mx-5">
+    <div class=" flex flex-col lg:grid lg:grid-cols-3 gap-8 mt-5 mx-5">
         @foreach($courses as $course)
             <div class="card-course">
                 <a class="" href="{{route('post',$course->slug)}}">
