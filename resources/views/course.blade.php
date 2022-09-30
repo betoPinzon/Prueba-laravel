@@ -1,9 +1,9 @@
 @extends('layouts.template')
 @section('contentIndex')
 <!--Template-->
-<div class="grid grid-rows-1 grid-cols-4 gap-4">
+<div class="lg:grid lg:grid-rows-1 lg:grid-cols-4 lg:gap-4">
     <!--Section Img/Autor/Similares-->
-    <div class="col-span-3">
+    <div class="flex flex-col lg:col-span-3">
         <!--Img-->
         <div class="w-full h-[380px] bg-center bg-cover" style="background-image: url({{$course->get_image}})">
         </div>
@@ -39,10 +39,9 @@
                     <p class="bg-red-500 rounded text-center px-2 font-narrow text-sm text-white">Sin categoría</p>
                 </div>
             @endif
-
         </div>
         <!--Similares-->
-        <div class=" ml-2.5 mt-12">
+        <div class="hidden lg:block order-5 ml-2.5 mt-12">
             <h3 class="text-center font-narrow font-bold text-4xl mb-8 tracking-wide">Cursos Similares</h3>
             <div class="grid grid-cols-3 gap-8">
                 @foreach($course->similar() as $similar)

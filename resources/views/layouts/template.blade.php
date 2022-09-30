@@ -15,7 +15,7 @@
 </head>
 <body>
 <header class="relative  w-full shadow-lg z-10">
-    <nav class="relative w-full">
+    <nav class="relative w-full lg:flex lg:justify-between lg:w-11/12 lg:m-auto lg:items-center">
         <div class="flex items-center justify-between">
             <button id="buton" class="lg:hidden rounded bg-slate-200 shadow-sm w-8 h-8 ml-3.5 flex flex-col items-center justify-center">
                 <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-slate-700 w-6 h-6">
@@ -29,8 +29,8 @@
                 <img class="py-1" alt="Logo" src="{{asset('img/LOGO2.svg')}}">
             </a>
         </div>
-        <div id="menu" class="absolute bg-gray-200 w-full hidden">
-            <ul class="ml-3.5  font-narrow text-lg">
+        <div id="menu" class="absolute bg-gray-200 w-full hidden lg:block lg:relative lg:w-auto lg:mr-5">
+            <ul class="ml-3.5  lg:ml-auto font-narrow text-lg">
                 <li>
                     <a href="" class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
